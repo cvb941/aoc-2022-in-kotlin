@@ -1,0 +1,20 @@
+# Day 01
+List.split() - neni zatial na listy, len na stringy
+List.splitWhile()
+
+# Day 03
+List.chunked(numberOfChunks: Int) - rozdeli list na dany pocet casti
+
+# Day 04
+Range operators (from c# timeperiod library)
+Range.fullyIntersects()
+Range.isInside()
+Collection.containsAll(other: Collection)
+Collection.containsAny(other: Collection)
+
+# Day 05
+fun <T> Iterable<Iterable<T>>.transpose() - niekto to chcel na slacku
+List.removeLast(count: Int)
+List<Char>.toString - teraz treba pisat List<Char>.joinToString(separator = "")
+List.prepend(element: T) - prida element na zaciatok
+List.prependAll(elements: Collection<T>) - prida kolekciu na zaciatok
