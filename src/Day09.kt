@@ -10,7 +10,6 @@ fun main() {
             'R' -> Pair(1, 0)
             else -> throw IllegalArgumentException("Invalid input: $vectorChar")
         }
-
     }
 
     fun getTailMovement(head: Pair<Int, Int>, tail: Pair<Int, Int>): Pair<Int, Int> {
@@ -24,7 +23,7 @@ fun main() {
         }
     }
 
-    class Part1() {
+    class Part1 {
         val visited = mutableSetOf(0 to 0)
 
         var tail = Pair(0, 0)
@@ -94,12 +93,4 @@ fun main() {
     val input = readInput("Day09")
     println(part1(input))
     println(part2(input))
-}
-
-private operator fun Pair<Int, Int>.minus(other: Pair<Int, Int>): Pair<Int, Int> {
-    return Pair(this.first - other.first, this.second - other.second)
-}
-
-private operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-    return Pair(this.first + other.first, this.second + other.second)
 }
